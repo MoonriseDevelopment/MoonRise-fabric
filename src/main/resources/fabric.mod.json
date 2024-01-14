@@ -3,9 +3,9 @@
 	"id": "moonrise",
 	"version": "${version}",
 	"name": "moonrise",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "so called \"utility mod\" for fabric",
 	"authors": [
-		"Me!"
+		"radmanplays"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -15,8 +15,8 @@
 	"icon": "assets/moonrise/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"dev.moonrise.Moonrise"
+		"client": [
+			"dev.moonrise.MoonriseClient"
 		],
 		"fabric-datagen": [
 			"dev.moonrise.MoonriseDataGenerator"
