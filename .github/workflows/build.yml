@@ -37,4 +37,4 @@ jobs:
         if: ${{ runner.os == 'Linux' && matrix.java == '21' }} # Only upload artifacts built from latest java on one OS
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: upload compiled jar file
+          commit_message: "upload compiled jar file"
