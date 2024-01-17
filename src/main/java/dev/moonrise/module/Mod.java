@@ -2,6 +2,7 @@ package dev.moonrise.module;
 
 public class Mod {
     private String name;
+	private String displayName;
     private String description;
     public Category category;
     private int key;
@@ -9,6 +10,7 @@ public class Mod {
 
     public Mod(String name, String description, Category category){
         this.name = name;
+		this.displayName = name;
         this.description = description;
         this.category = category;
 
@@ -32,9 +34,15 @@ public class Mod {
 
 	}
 
-    
+	public String getDisplayName() {
+		return displayName;
+	}
 
-    public String getName() {
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
+	}
+
+	public String getName() {
 		return name;
 	}
 

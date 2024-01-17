@@ -10,7 +10,6 @@ public class Flight extends Mod {
         super("Flight", "allows you to fly!", Category.MOVEMENT);
         this.setKey(GLFW.GLFW_KEY_F);
     }
-    public boolean isAlreadyEnabled;
 
     public void onTick() {
         mc.player.getAbilities().allowFlying = true;
@@ -19,6 +18,7 @@ public class Flight extends Mod {
 
     public void onDisable() {
         mc.player.getAbilities().allowFlying = false;
+        mc.player.getAbilities().flying = false;
         super.onDisable();
     }
 

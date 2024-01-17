@@ -3,7 +3,7 @@ package dev.moonrise.module;
 import java.util.ArrayList;
 import java.util.List;
 
-import dev.moonrise.module.movement.Flight;
+import dev.moonrise.module.movement.*;
 
 public class ModuleManager {
     public static ModuleManager INSTANCE = new ModuleManager();
@@ -24,5 +24,6 @@ public class ModuleManager {
 
     private void addModules(){
         modules.add(new Flight());
+        modules.add(new Sprint());
     }
 }
